@@ -2,18 +2,31 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Piepagina.astro';
+import Auth from '../components/auth/Autho.astro';
+
+
+export function getStaticPaths() {
+  return [
+    {params: {dog: 'clifford'}},
+    {params: {dog: 'rover'}},
+    {params: {dog: 'spot'}},
+  ];
+}
+const { dog } = Astro.params;
 ---
 
 <Layout>
 	<main>
 		<Header />
 		<Footer />
+		<div>buen chico {dog}</div>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
+		<Auth />
 	</main>
 </Layout>
 
