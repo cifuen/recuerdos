@@ -1,15 +1,82 @@
 ---
-console.log('hola')
+
+
+
 ---
 
-<header>
-    <ul>
-        <li class="a">A</li>
-        <li class="a">B</li>
-        <li class="a">C</li>
-        <li class="a">D</li>
-        <li class="a">E</li>
+<nav class="navbar">
+    <a href="#" class="logo">MiSitio</a>
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
     </ul>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+</nav>
 
-    <div></div>
-</header>
+
+<style>
+  /* Estilos básicos */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 50px;
+}
+
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+</style>
