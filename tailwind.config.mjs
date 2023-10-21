@@ -6,3 +6,11 @@ export default {
 	},
 	plugins: [],
 }
+module.exports = {
+	darkMode: 'media',
+	variants: {
+		extend: {
+		  textOpacity: ['dark']
+		}
+	  }
+  }

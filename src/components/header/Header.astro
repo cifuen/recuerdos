@@ -3,80 +3,47 @@
 
 
 ---
-
-<nav class="navbar">
-    <a href="#" class="logo">MiSitio</a>
-    <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-</nav>
-
+<header>
+    <div>
+        <h1>Juan Diego Cifuentes Tobon...</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    
+</header>
 
 <style>
-  /* Estilos básicos */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 50px;
-}
-
-.navbar .logo {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 10px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-.nav-links li a:hover {
-    background-color: #555;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
+    header {
+        display: flexbox;
+        justify-content: center ;
         align-items: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
+        padding-bottom: 15px;
     }
-
-    .nav-links.active {
+    nav {
         display: flex;
+        
+    }
+    ul{
+        display: flex;
+        flex-flow: wrap row;
+        gap: 15px;
+    }
+    nav ul li {
+        display: flex;
+        color: aqua;
     }
 
-    .menu-toggle {
-        display: block;
+
+    #titulo 
+    div {
+        color: black;
     }
-}
 
 </style>
