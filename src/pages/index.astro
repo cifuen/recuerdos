@@ -1,32 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/Header.astro';
-import Footer from '../components/footer/Piepagina.astro';
-import Auth from '../components/auth/Autho.astro';
-
-
-export function getStaticPaths() {
-  return [
-    {params: {dog: 'clifford'}},
-    {params: {dog: 'rover'}},
-    {params: {dog: 'spot'}},
-  ];
-}
-const { dog } = Astro.params;
+import Card_admin from '../components/cards/cards index admin/Card_admin.astro';
 ---
 
 <Layout>
 	<main>
-		<Footer />
-		<div>buen chico {dog}</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, error sapiente vero molestias, ut ullam excepturi, exercitationem ipsam quia cupiditate voluptatem quibusdam! Eveniet cupiditate fugit cumque delectus officia aliquid soluta?</p>
-		<Auth />
+		<hr>
+		<div>
+			<h2>Presentacion</h2>
+			<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem minus explicabo quis aspernatur nostrum eos eligendi vel et illo, blanditiis obcaecati sint consequatur magnam omnis voluptatem nesciunt sapiente officia?
+
+			</p>
+		</div>
+		<hr>
+		<Card_admin />
+		<hr>
+		
 	</main>
 </Layout>
 
 
+<style>
+	hr {
+		padding-bottom: 3rem;
+	}
+
+</style>
