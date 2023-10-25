@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card_admin from '../components/cards/cards index admin/Card_admin.astro';
-import Card_index from '../components/cards/cards index post/Card_index_post.astro';
+import Index_Cart from "../components/card_index/Card.astro";
+
+
 ---
 
 <Layout>
@@ -20,21 +21,13 @@ import Card_index from '../components/cards/cards index post/Card_index_post.ast
 			<p>
 				Juan Diego Cifuentes Tobon  🚀
 			</p>
-		</div><br>
-		<hr>
-		<Card_index />
-		<br><hr>
-		<Card_admin />
-
-		<br><hr>
+			<Index_Cart/>
 	</main>
+	
 </Layout>
 
-
 <style>
-	hr {
-		padding-bottom: 3rem;
+	main {
+		color: white;
 	}
-	
-
 </style>
