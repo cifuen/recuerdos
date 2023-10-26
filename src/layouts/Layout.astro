@@ -1,31 +1,29 @@
 ---
 import Header from "../components/header/Header.astro";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js?url";
+import"bootstrap/dist/js/bootstrap.bundle.min.js?url";
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Juan Diego Cifuentes Tobon.</title>
-		</head>
-	<body class="bg-dark">
-		<Header />
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Juan Diego Cifuentes Tobon.</title>
+  </head>
+  <body class="bg-violet-900 font-mono text-white">
+    <Header />
+    <slot />
+  </body>
 </html>
 
-
 <style>
-	body {
-		margin: 0 auto;
-		min-width: 450px;
-		max-width: 50%;
-		color: white;
-	}
-	
+  body {
+    margin: 0 auto;
+    min-width: 450px;
+    max-width: 50%;
+    color: white;
+  }
 </style>

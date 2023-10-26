@@ -1,32 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import Index_Cart from "../components/card_index/Card.astro";
-
-
 ---
 
 <Layout>
-	<main>
-		<div class="bienvenida">
-			<p class="text-warning">
-				¡Hola! 😃
-			</p><br>
-			<p>
-				¡Vaya! Has aterrizado en mi pequeño rincón cibernético. ¡Bienvenido(a) al mundo de Diego! Aquí encontrarás una mezcla de mis aventuras, locuras, proyectos y, bueno, un poco de todo. ¡Prepárate para una montaña rusa de emociones y contenido! Diviértete explorando y, si te pierdes, ¡deja un mensaje en una botella (o simplemente contáctame)!
-			</p><br>
-			<p>
-				¡A disfrutar del viaje!
-			</p><br>
-			<p class="text-warning">
-				Juan Diego Cifuentes Tobon  🚀
-			</p><br><hr class="border  border-2 border-info">
-			<Index_Cart/>
-	</main>
-	
+  <main>
+    <div >
+      <h2>¡Hola! 😃</h2>
+      <hr />
+      <p>
+        Has aterrizado en mi pequeño rincón cibernético. ¡Bienvenido(a) al mundo
+        de Diego! Aquí encontrarás una mezcla de mis aventuras, locuras,
+        proyectos y, bueno, un poco de todo. ¡Prepárate para una montaña rusa de
+        emociones y contenido! Diviértete explorando y, si te pierdes, ¡deja un
+        mensaje en una botella (o simplemente contáctame)!
+      </p>
+      <p>Juan Diego Cifuentes Tobon 🚀</p>
+    </div><br><br><br>
+    <Index_Cart />
+  </main>
 </Layout>
 
 <style>
-	main {
-		color: white;
-	}
+  main {
+    color: white;
+  }
 </style>
